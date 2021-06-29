@@ -1,10 +1,10 @@
 package co.edu.utp.misiontic2022.c2.chb;
-import java.io.BufferedReader;
-import java.util.Scanner;
+//import java.io.BufferedReader;
+//import java.util.Scanner;
 
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 
-import java.io.InputStreamReader;
+//import java.io.InputStreamReader;
 
 /**
  * Hello world!

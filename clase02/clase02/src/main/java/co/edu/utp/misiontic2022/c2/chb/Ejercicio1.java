@@ -2,13 +2,17 @@ package co.edu.utp.misiontic2022.c2.chb;
 
 import java.util.Scanner;
 
+//import java.util.Scanner;
+
 public class Ejercicio1 {
 
     public static void main(String[] args) {
-        
-//        Scanner sc = new Scanner(System.in);
+        System.out.println("*** PROGRAMA PARA CALCULAR NÚMERO DE LA SUERTE ACORDE A UNA FECHA ***");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingresa una fecha con formato: dd/mm/aaaa, Example: 10/12/1904");
+        var fecha = sc.nextLine();
 
-        System.out.println("Su número de la suerte es: "+ numeroSuerte("17/10/1994"));
+        System.out.println("Su número de la suerte es: "+ numeroSuerte(fecha));
     }
 
     public static int numeroSuerte(String fechaNacimiento){
