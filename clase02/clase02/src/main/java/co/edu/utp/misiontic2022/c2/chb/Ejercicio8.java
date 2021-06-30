@@ -5,11 +5,15 @@ import java.util.Scanner;
 public class Ejercicio8 {
  
     public static void main(String[] args) {
-        double num1, num2;
+
         Scanner input = new Scanner(System.in);
         System.out.println("*** PROGRAMA PARA DIVIDIR Y COMPROBAR DIVISOR ***");
+        
+        double num1, num2;
+        
         System.out.println("Ingresa el primer número: ");
         num1 = input.nextDouble();
+        
         System.out.println("Ingresa el segundo número (Divisor)");
         num2 = input.nextDouble();
 

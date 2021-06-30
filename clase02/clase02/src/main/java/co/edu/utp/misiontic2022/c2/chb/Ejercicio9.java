@@ -5,13 +5,19 @@ import java.util.Scanner;
 public class Ejercicio9 {
 
     public static void main(String[] args) {
+
         System.out.println("*** PROGRAMA PARA DETERMINAR EL NÚMERO MAYOR DE 3 VALORES DISTINTOS INGRESADOS***");
+        
         Scanner input = new Scanner(System.in);
+
         int num1, num2, num3;
+
         System.out.println("Ingresa el primer número: ");
         num1 = input.nextInt();
+
         System.out.println("Ingresa el segundo número: ");
         num2 = input.nextInt();
+        
         System.out.println("Ingresa el tercer número");
         num3 = input.nextInt();
 

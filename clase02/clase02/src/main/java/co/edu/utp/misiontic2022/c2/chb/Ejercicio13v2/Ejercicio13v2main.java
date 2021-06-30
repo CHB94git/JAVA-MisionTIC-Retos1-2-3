@@ -1,15 +1,18 @@
 package co.edu.utp.misiontic2022.c2.chb.Ejercicio13v2;
 
-import co.edu.utp.misiontic2022.c2.chb.Ejercicio13v2.convertirMoneda;
+//import co.edu.utp.misiontic2022.c2.chb.Ejercicio13v2.convertirMoneda;
 
 import javax.swing.JOptionPane;
 
 public class Ejercicio13v2main {
  
     public static void main(String[] args) {
+
         convertirMoneda change = new convertirMoneda();
+
         int opcion;
         double cant;
+
         do{
             opcion = Integer.parseInt(JOptionPane.showInputDialog("Convertidor de Moneda\n\n"
                     + "1: Dólares USD a Pesos COP\n"

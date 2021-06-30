@@ -9,6 +9,7 @@ public class Ejercicio14 {
      System.out.println("*** PROGRAMA PARA MOSTRAR SERIE DE FIBONACCI ***");
      
      Scanner sc = new Scanner(System.in);
+     
      int n, firstTerm = 0;
      int fibonacci = 1;
      int nextTerm;
@@ -19,12 +20,12 @@ public class Ejercicio14 {
      //Imprimimos la serie de fibonacci
      System.out.println("La serie Fibonacci de los " + n + " términos solicitados es la siguiente: ");
      
-     for (int i = 1; i <= n; i++){
-        nextTerm = firstTerm;
-        firstTerm = fibonacci + firstTerm;
-        fibonacci = nextTerm;
-        System.out.println(fibonacci);
-     }
+        for (int i = 1; i <= n; i++){
+            nextTerm = firstTerm;
+            firstTerm = fibonacci + firstTerm;
+            fibonacci = nextTerm;
+            System.out.println(fibonacci);
+        }
         
     }
 }

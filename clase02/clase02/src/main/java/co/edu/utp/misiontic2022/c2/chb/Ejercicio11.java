@@ -7,8 +7,11 @@ public class Ejercicio11 {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
+
         System.out.println("*** PROGRAMA PARA INDICAR MESES DEL AÑO Y SU CANTIDAD DE DÍAS");
+        
         int mes;
+        
         System.out.println("Ingrese el número del mes: ");
         mes = input.nextInt();
 

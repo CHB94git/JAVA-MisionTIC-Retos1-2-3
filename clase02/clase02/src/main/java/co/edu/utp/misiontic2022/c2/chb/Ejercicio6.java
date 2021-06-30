@@ -7,6 +7,7 @@ public class Ejercicio6 {
     public static void main(String[] args) {
         
         System.out.println("*** PROGRAMA QUE DETERMINA SI UN NÚMERO ES MÚLTIPLO DE 10***");
+        
         Scanner input = new Scanner(System.in);
         int numero;
         System.out.println("Ingresa un número: ");

@@ -4,7 +4,9 @@ import java.util.Scanner;
 public class Ejercicio2 {
 
     public static void main(String[] args) {
+
         System.out.println("*** PROGRAMA PARA CALCULAR EL PRECIO DE VENTA DE UN/OS PRODUCTO/S");
+        
         Scanner input = new Scanner(System.in);
         double costoUnidad, cantidad, iva, costoSinIva, ivaFinal;
 

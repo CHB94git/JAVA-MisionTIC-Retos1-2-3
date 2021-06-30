@@ -12,8 +12,10 @@ public class Ejercicio15 {
          */
 
         System.out.println("*** PROGRAMA PARA CALCULAR LA SUMA DE LOS FACTORIALES HASTA UN NÚMERO N DADO");
+        
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingresar un número N: ");
+        
+        System.out.println("Ingresar un número: ");
         
         int n = sc.nextInt();
         int iFactorial = 1;

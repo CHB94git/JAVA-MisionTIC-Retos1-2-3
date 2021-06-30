@@ -7,8 +7,10 @@ import java.util.Scanner;
 public class Ejercicio1 {
 
     public static void main(String[] args) {
-        System.out.println("*** PROGRAMA PARA CALCULAR NÚMERO DE LA SUERTE ACORDE A UNA FECHA ***");
+
         Scanner sc = new Scanner(System.in);
+        
+        System.out.println("*** PROGRAMA PARA CALCULAR NÚMERO DE LA SUERTE ACORDE A UNA FECHA ***");
         System.out.println("Ingresa una fecha con formato: dd/mm/aaaa, Example: 10/12/1904");
         var fecha = sc.nextLine();
 

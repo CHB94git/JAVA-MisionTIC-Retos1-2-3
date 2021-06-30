@@ -3,6 +3,7 @@ package co.edu.utp.misiontic2022.c2.chb.Ejercicio13v2;
 import javax.swing.JOptionPane;
 
 public class convertirMoneda {
+    
         public int cantidad;
         public double valorDolar = 3767.50;
         public double result;
