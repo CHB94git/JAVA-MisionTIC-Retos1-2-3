@@ -18,6 +18,7 @@ public class Ejercicio2 {
 
         System.out.println("Ingrese el %iva a aplicar: ");
         iva = input.nextDouble();
+        input.close();
 
         costoUnidad = costoSinIva * cantidad;
         ivaFinal = costoUnidad * iva / 100;

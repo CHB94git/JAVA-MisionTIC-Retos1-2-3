@@ -14,6 +14,7 @@ public class Ejercicio11 {
         
         System.out.println("Ingrese el número del mes: ");
         mes = input.nextInt();
+        input.close();
 
         if (mes > 12 || mes < 1) {
             System.out.println("El número del mes que ingresaste no es válido!");

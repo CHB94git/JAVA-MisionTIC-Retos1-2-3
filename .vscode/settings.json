@@ -2,6 +2,6 @@
     "java.project.sourcePaths": [
         "HolaMundo/src",
         "Clase01/Ejercicios/src",
-        "Prueba"
+        "HolaQuien"
     ]
 }

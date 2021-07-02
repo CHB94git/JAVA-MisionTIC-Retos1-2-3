@@ -16,6 +16,7 @@ public class Ejercicio14 {
 
      System.out.println("¿Cuántos números de la serie Fibonacci desea generar?");
      n = sc.nextInt();
+     sc.close();
     
      //Imprimimos la serie de fibonacci
      System.out.println("La serie Fibonacci de los " + n + " términos solicitados es la siguiente: ");

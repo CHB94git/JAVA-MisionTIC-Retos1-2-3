@@ -20,6 +20,7 @@ public class Ejercicio9 {
         
         System.out.println("Ingresa el tercer número");
         num3 = input.nextInt();
+        input.close();
 
         if (num1 > num2) {
             if (num1 > num3) {

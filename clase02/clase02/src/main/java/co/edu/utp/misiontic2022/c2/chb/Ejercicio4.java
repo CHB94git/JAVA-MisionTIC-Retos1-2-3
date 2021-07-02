@@ -13,6 +13,7 @@ public class Ejercicio4 {
         
         System.out.println("Ingrese la velocidad en km/h a convertir en m/s: ");
         velKm = input.nextFloat();
+        input.close();
         velMs = (velKm * 1000/3600);
 
         System.out.println("La velocidad ingresada es: " + velKm + " Km/h");

@@ -14,6 +14,7 @@ public class Ejercicio3 {
         n = input.nextInt();
         System.out.println("Ingrese la cantidad de cifras a quitar");
         m = input.nextInt();
+        input.close();
 
         n = (n / (int)Math.pow(10, m));
         System.out.println("Número resultante después de quitarle m cifras: " + n);

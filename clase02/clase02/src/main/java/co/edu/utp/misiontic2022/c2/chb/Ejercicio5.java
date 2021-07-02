@@ -16,6 +16,7 @@ public class Ejercicio5 {
         
         System.out.println("Ingrese la longitud del segundo cateto");
         cat2 = input.nextDouble();
+        input.close();
         
         hipotenusa = Math.sqrt(Math.pow(cat1, 2) + Math.pow(cat2, 2));
         hypot = Math.hypot(cat1, cat2);

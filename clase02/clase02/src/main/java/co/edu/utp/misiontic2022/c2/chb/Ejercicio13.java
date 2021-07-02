@@ -7,7 +7,7 @@ public class Ejercicio13 {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
-
+        System.out.print("*** PROGRAMA PARA CALCULAR LA CONVERSIÓN DE DIVISAS\n\n");
         System.out.println("INGRESE UN NÚMERO DE ACUERDO A LA CONVERSIÓN QUE DESEA");
         System.out.println("1. (USD) Dólares a pesos colombianos");
         System.out.println("2. (COP) Pesos colombianos a Dólares");
@@ -16,6 +16,7 @@ public class Ejercicio13 {
 
         int opcion;
         opcion = sc.nextInt();
+        
 
         if (opcion == 1) {
             double Dolares, result;
@@ -32,6 +33,7 @@ public class Ejercicio13 {
                     System.out.println("$"+ Pesos + " Pesos COP es igual a: " + result + " dólares USD");
                 }
         }
+        sc.close();
     }
 }
 

@@ -12,6 +12,7 @@ public class Ejercicio6 {
         int numero;
         System.out.println("Ingresa un número: ");
         numero = input.nextInt();
+        input.close();
 
         if (numero % 10 == 0) {
             System.out.println("El número es múltiplo de 10");

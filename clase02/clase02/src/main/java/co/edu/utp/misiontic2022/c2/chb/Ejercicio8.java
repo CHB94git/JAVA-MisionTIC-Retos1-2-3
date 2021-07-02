@@ -16,6 +16,7 @@ public class Ejercicio8 {
         
         System.out.println("Ingresa el segundo número (Divisor)");
         num2 = input.nextDouble();
+        input.close();
 
         if (num2 == 0) {
             System.out.println("El divisor no puede ser 0, Operación inexistente!!");

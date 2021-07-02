@@ -23,7 +23,8 @@ public class Ejercicio12 {
         // Solución mediante DO While
 
         /*
-          do{ if (num % 3 == 0 ) {
+          do{ 
+              if (num % 3 == 0 ) {
           
           } else { System.out.println(num + " NO es múltiplo de 3"); } num++;
           
@@ -39,8 +40,6 @@ public class Ejercicio12 {
                 System.out.println(i + " NO es múltiplo de 3");
             }
         } 
-        
-
         
     }
 }

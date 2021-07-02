@@ -20,6 +20,7 @@ public class Ejercicio10 {
         
         System.out.println("Ingresa los segundos: ");
         s = input.nextInt();
+        input.close();
 
         
         if (h >= 0 && h <= 24 && m >= 0 && m <= 60 && s >= 0 && s <= 60) {

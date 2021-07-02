@@ -18,6 +18,8 @@ public class Ejercicio5 {
         System.out.println("Ingrese un número entero");
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
+        sc.close();
+
         int residuo = num % 2;
 
         String resultado = (residuo == 0) ? "El número es par!" : "El número es impar";

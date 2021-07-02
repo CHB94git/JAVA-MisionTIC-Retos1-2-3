@@ -18,6 +18,8 @@ public class Ejercicio15 {
         System.out.println("Ingresar un número: ");
         
         int n = sc.nextInt();
+        sc.close();
+
         int iFactorial = 1;
         int sumaFactoriales = 0;
 

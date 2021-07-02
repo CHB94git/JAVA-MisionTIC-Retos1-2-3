@@ -8,7 +8,7 @@ public class Ejercicio2 {
 
         System.out.println("Introduce un número entero: ");
         var num = sc.nextInt();
-
+        sc.close();
         var digitos = numeroDigitos(num);
         System.out.println("El número tiene " + digitos + " cifras");
 
