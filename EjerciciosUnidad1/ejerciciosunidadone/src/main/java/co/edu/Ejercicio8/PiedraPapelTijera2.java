@@ -1,57 +1,62 @@
 package co.edu.Ejercicio8;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class PiedraPapelTijera2 {
-    
-    public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
         String jugador1, jugador2;
-        boolean jugar;
-        do{
-            System.out.println("PIEDRA PAPEL TIJERA\n");
-            System.out.println("\nINTRODUCE OPCION JUGADOR 1: P/L/T\n");
-            jugador1=teclado.next();
-            System.out.println("\nINTRODUCE OPCION JUGADOR 2: P/L/T\n");
-            jugador2=teclado.next();
-            jugar=true;
-            if(jugador1.equals("P") && jugador2.equals("P")) {
+        char caracter;
+        do {
+            System.out.println("*** JUEGO DE PIEDRA PAPEL TIJERA\n");
+            System.out.println("\nINTRODUCE OPCIÓN JUGADOR 1: P = PIEDRA/L = PAPEL/T = TIJERA\n");
+            jugador1 = sc.next();
+            System.out.println("\nINTRODUCE OPCIÓN JUGADOR 2: P = PIEDRA/L = PAPEL/T = TIJERA\n");
+            jugador2 = sc.next();
+
+            if (jugador1.equals("P") && jugador2.equals("P")) {
                 System.out.println("\nEMPATE\n");
-                jugar=false;
+
             }
-            if(jugador1.equals("P") && jugador2.equals("L")) {
+            if (jugador1.equals("P") && jugador2.equals("L")) {
                 System.out.println("\nGANA JUGADOR 2\n");
-                jugar=false;
+
             }
-            if(jugador1.equals("P") && jugador2.equals("T")) {
+            if (jugador1.equals("P") && jugador2.equals("T")) {
                 System.out.println("\nGANA JUGADOR 1\n");
-                jugar=false;
+
             }
-            if(jugador1.equals("L") && jugador2.equals("P")) {
+            if (jugador1.equals("L") && jugador2.equals("P")) {
                 System.out.println("\nGANA JUGADOR 1\n");
-                jugar=false;
+
             }
-            if(jugador1.equals("L") && jugador2.equals("L")) {
+            if (jugador1.equals("L") && jugador2.equals("L")) {
                 System.out.println("\nEMPATE\n");
-                jugar=false;
+
             }
-            if(jugador1.equals("L") && jugador2.equals("T")) {
+            if (jugador1.equals("L") && jugador2.equals("T")) {
                 System.out.println("\nGANA JUGADOR 2\n");
-                jugar=false;
+
             }
-            if(jugador1.equals("T") && jugador2.equals("P")) {
+            if (jugador1.equals("T") && jugador2.equals("P")) {
                 System.out.println("\nGANA JUGADOR 2\n");
-                jugar=false;
+
             }
-            if(jugador1.equals("T") && jugador2.equals("L")) {
+            if (jugador1.equals("T") && jugador2.equals("L")) {
                 System.out.println("\nGANA JUGADOR 1\n");
-                jugar=false;
+
             }
-            if(jugador1.equals("T") && jugador2.equals("T")) {
+            if (jugador1.equals("T") && jugador2.equals("T")) {
                 System.out.println("\nEMPATE\n");
-                jugar=false;
+
             }
-        }while(jugar==false);	
-        teclado.close();	
-    } 
+            System.out.print("Desea jugar de nuevo? (S/N): ");
+            caracter = (char) System.in.read();
+
+        } while (caracter == 'S' || caracter == 's');
+
+        sc.close();
+    }
 }
