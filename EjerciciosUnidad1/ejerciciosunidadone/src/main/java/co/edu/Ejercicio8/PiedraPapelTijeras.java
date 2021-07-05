@@ -4,25 +4,32 @@ import java.util.Scanner;
 
 public class PiedraPapelTijeras {
 
+    /*
+     * Realizar un programa que permita controlar el juego de piedra, papel, tijera
+     * introduciendo P para piedra, L para papel y T para tijera por cada jugador.
+     * El sistema debe indicar qué jugador gana la ronda o si hay empate. Al final
+     * de cada ronda preguntar si desea volver a jugar
+     */
+
     private Usuario usuario1, usuario2;
     
     private enum Movimiento {
 
         PIEDRA, PAPEL, TIJERAS;
 
-        public int compararMovimientos(Movimiento otroMov) {
+        public int compararMovimientos(Movimiento jugada) {
 
             // Empate
-            if (this == otroMov)
+            if (this == jugada)
                 return 0;
 
             switch (this) {
                 case PIEDRA:
-                    return (otroMov == TIJERAS ? 1 : -1);
+                    return (jugada == TIJERAS ? 1 : -1);
                 case PAPEL:
-                    return (otroMov == PIEDRA ? 1 : -1);
+                    return (jugada == PIEDRA ? 1 : -1);
                 case TIJERAS:
-                    return (otroMov == PAPEL ? 1 : -1);
+                    return (jugada == PAPEL ? 1 : -1);
             }
 
             return 0;
@@ -31,15 +38,16 @@ public class PiedraPapelTijeras {
 
     private class Usuario {
 
+        //Ingreso de jugadas
         private Scanner input;
 
         public Usuario() {
             input = new Scanner(System.in);
-        }
+        } 
 
         public Movimiento mov() {
 
-            System.out.print("Elige lo que quieras jugar:\n\npiedra P, p\npapel L, l\ntijeras T, t\n");
+            System.out.print("Elige lo que quieras jugar:\n\npiedra P, p\npapel L, l\ntijeras T, t\n\n");
 
             String sc = input.nextLine();
             sc = sc.toUpperCase();
@@ -86,7 +94,7 @@ public class PiedraPapelTijeras {
         System.out.println("\nJugador 2 elige tu jugada:\n ");
         Movimiento usuario2Mov = usuario2.mov();
 
-        System.out.println("\nJugador 1 ha jugado " + usuario1Mov + ".");
+        System.out.println("\nJugador 1 ha jugado " + usuario1Mov + ".\n");
         System.out.println("Jugador 2 ha jugado " + usuario2Mov + ".\n");
     
         int comparar = usuario1Mov.compararMovimientos(usuario2Mov);
@@ -98,11 +106,11 @@ public class PiedraPapelTijeras {
                 break;
 
             case 1: // Gana Usuario1
-                System.out.println(usuario1Mov + " le gana a " + usuario2Mov + ", Usuario 1 gana!");
+                System.out.println(usuario1Mov + " le gana a " + usuario2Mov + ", Jugador 1 gana!");
                 break;
 
             case -1: // Gana Usuario2
-                System.out.println(usuario2Mov + " le gana a " + usuario1Mov + ", Usuario 2 gana!");
+                System.out.println(usuario2Mov + " le gana a " + usuario1Mov + ", Jugador 2 gana!");
                 break;
         }
         

@@ -5,6 +5,13 @@ import java.util.Scanner;
 
 public class PiedraPapelTijera2 {
 
+    /*
+     * Realizar un programa que permita controlar el juego de piedra, papel, tijera
+     * introduciendo P para piedra, L para papel y T para tijera por cada jugador.
+     * El sistema debe indicar qué jugador gana la ronda o si hay empate. Al final
+     * de cada ronda preguntar si desea volver a jugar
+     */
+
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         String jugador1, jugador2;

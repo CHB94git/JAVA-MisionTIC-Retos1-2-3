@@ -2,12 +2,14 @@ package co.edu.utp.misiontic2022.c2.chb;
 
 public class Ejercicio12 {
 
-    public static void main(String[] args) {
-        /*
+    /*
          * Realizar programa que muestre los números del 1 al 100 que no sean múltiplos
          * de 3 utilizando cada una las instrucciones repetitivas while do while for
          */
-        System.out.println("*** PROGRAMA PARA DETERMINAR LOS NO MÚLTIPLOS DE 3 ENTRE 0 Y 100");
+
+    public static void main(String[] args) {
+        
+        System.out.println("*** PROGRAMA PARA DETERMINAR LOS NO MÚLTIPLOS DE 3 ENTRE 0 Y 100 ***");
         
         //int num = 1;  //Inicialización variable para ciclos Do While y While
 

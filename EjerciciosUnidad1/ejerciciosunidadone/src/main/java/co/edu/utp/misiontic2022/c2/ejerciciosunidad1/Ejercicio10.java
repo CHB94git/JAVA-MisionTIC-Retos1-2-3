@@ -4,9 +4,15 @@ import java.util.Scanner;
 
 public class Ejercicio10 {
 
+    /*
+     * Muestra la serie de fibonacci hasta un número pedido por teclado. Por
+     * ejemplo, si el número ingresado es el 100, debe imprimir los números 0, 1, 1,
+     * 2, 3, 5, 8, 13, 21, 34, 55, 89
+     */
+
     public static void main(String[] args) {
 
-        System.out.println("*** PROGRAMA PARA MOSTRAR SERIE DE FIBONACCI HASTA LÍMITE DADO***");
+        System.out.println("*** PROGRAMA PARA MOSTRAR SERIE DE FIBONACCI HASTA LÍMITE DADO ***");
 
         Scanner sc = new Scanner(System.in);
 
@@ -24,7 +30,7 @@ public class Ejercicio10 {
             temp = num1;
             num1 = num2 + num1;
             num2 = temp;
-            
+
             System.out.println(num2);
         }
     }

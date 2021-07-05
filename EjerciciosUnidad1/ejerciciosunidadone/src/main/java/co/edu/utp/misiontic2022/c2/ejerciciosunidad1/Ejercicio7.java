@@ -4,13 +4,18 @@ import java.util.Scanner;
 
 public class Ejercicio7 {
 
+    /*
+     * Pedir un número, comprobar si es primo y preguntar si quiere introducir más
+     * (S/N) y volver a pensar
+     */
+
     Scanner sc = new Scanner(System.in);
     private boolean activo = true;
     private static Scanner sc2;
 
     public void verificar() {
 
-        System.out.println("*** PROGRAMA PARA VERIFICAR SÍ UN NÚMERO INGRESADO ES PRIMO");
+        System.out.println("*** PROGRAMA PARA VERIFICAR SÍ UN NÚMERO INGRESADO ES PRIMO ***");
         System.out.print("false = NO es primo\ntrue = es primo\n\n");
 
         while (activo) {

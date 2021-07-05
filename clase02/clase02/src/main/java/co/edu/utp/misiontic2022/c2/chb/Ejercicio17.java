@@ -2,10 +2,12 @@ package co.edu.utp.misiontic2022.c2.chb;
 
 public class Ejercicio17 {
 
+    /*Mostrar un contador de 5 dígitos. En lugar del dígito 3 se debe mostrar E*/
+
     public static void main(String[] args) {
 
         
-        /* *** PROGRAMA CONTADOR DE 5 DÍGITOS, REEMPLAZA EL 3 POR "E" *** */
+        System.out.println("*** PROGRAMA CONTADOR DE 5 DÍGITOS, REEMPLAZA EL 3 POR 'E' ***");  
 
         
         // Solución Usando el ciclo While

@@ -4,14 +4,21 @@ import java.util.Scanner;
 
 public class Ejercicio11 {
 
+    /*
+     * Programa que lea una variable entera mes y compruebe si el valor corresponde
+     * a un mes de 30 días, de 31 o de 28 Supondremos que febrero tiene 28 días Se
+     * mostrará además el nombre del mes Se debe comprobar que el valor introducido
+     * esté comprendido entre 1 y 12
+     */
+
     public static void main(String[] args) {
-        
+
         Scanner input = new Scanner(System.in);
 
-        System.out.println("*** PROGRAMA PARA INDICAR MESES DEL AÑO Y SU CANTIDAD DE DÍAS");
-        
+        System.out.println("*** PROGRAMA PARA DETERMINAR LOS MESES DEL AÑO Y SU CANTIDAD DE DÍAS ***");
+
         int mes;
-        
+
         System.out.println("Ingrese el número del mes: ");
         mes = input.nextInt();
         input.close();
@@ -22,41 +29,41 @@ public class Ejercicio11 {
             switch (mes) {
                 case 1:
                     System.out.printf("El mes ingresado es %d y corresponde a Enero\n", mes);
-                break;
+                    break;
                 case 2:
                     System.out.printf("El mes ingresado es %d y corresponde a Febrero\n", mes);
-                break;
+                    break;
                 case 3:
                     System.out.printf("El mes ingresado es %d y corresponde a Marzo\n", mes);
-                break;
+                    break;
                 case 4:
                     System.out.printf("El mes ingresado es %d y corresponde a Abril\n", mes);
-                break;
+                    break;
                 case 5:
                     System.out.printf("El mes ingresado es %d y corresponde a Mayo\n", mes);
-                break;
+                    break;
                 case 6:
                     System.out.printf("El mes ingresado es %d y corresponde a Junio\n", mes);
-                break;
+                    break;
                 case 7:
                     System.out.printf("El mes ingresado es %d y corresponde a Julio\n", mes);
-                break;
+                    break;
                 case 8:
                     System.out.printf("El mes ingresado es %d y corresponde a Agosto\n", mes);
-                break;
+                    break;
                 case 9:
                     System.out.printf("El mes ingresado es %d y corresponde a Septiembre\n", mes);
-                break;
+                    break;
                 case 10:
                     System.out.printf("El mes ingresado es %d y corresponde a Octubre\n", mes);
-                break;
+                    break;
                 case 11:
                     System.out.printf("El mes ingresado es %d y corresponde a Noviembre\n", mes);
-                break;
+                    break;
                 case 12:
                     System.out.printf("El mes ingresado es %d y corresponde a Diciembre\n", mes);
-                break;
-                
+                    break;
+
             }
 
             if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
@@ -70,6 +77,5 @@ public class Ejercicio11 {
         }
 
     }
-    
-    
+
 }
