@@ -1,10 +1,13 @@
 package co.edu.utp.misiontic2022.c2;
 
-public abstract class Ficha {
+public class Peon {
     
-    private String color;
 
     public Boolean comer(){
+        return true;
+    }
+
+    public Boolean coronar(){
         return true;
     }
 

@@ -2,8 +2,16 @@ package co.edu.utp.misiontic2022.c2;
 
 public class Tablero {
     
-    public static void main(String[] args) {
-        
 
+    public Boolean puedeHacerEnroque(){
+        return true;
+    }
+
+    public Boolean estaEnJaque(){
+        return true;
+    }
+
+    public Boolean estaEnJaqueMate(){
+        return true;
     }
 }
