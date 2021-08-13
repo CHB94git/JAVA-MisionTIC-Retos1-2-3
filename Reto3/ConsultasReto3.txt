@@ -1,0 +1,46 @@
+1. SELECT mc.ID_MaterialConstruccion AS ID, mc.Nombre_Material AS NOMBRE, mc.Precio_Unidad AS PRECIO 
+FROM MaterialConstruccion mc
+WHERE Importado = 'Si' 
+ORDER BY NOMBRE;
+
+
+
+2. SELECT p.ID_Proyecto AS ID, p.Constructora, p.Ciudad, p.Clasificacion, t.Estrato,
+		l.Nombre || ' ' || l.Primer_Apellido || ' ' || l.Segundo_Apellido AS LIDER
+FROM Proyecto p
+JOIN Tipo t ON (t.ID_Tipo = p.ID_Tipo)
+JOIN Lider l ON (l.ID_Lider = p.ID_Lider)
+WHERE p.Banco_Vinculado IN ('Conavi')
+ORDER BY p.Fecha_Inicio DESC, p.Ciudad, p.Constructora ASC;
+
+
+3. SELECT p.Ciudad, p.Clasificacion, COUNT(*) AS TOTAL, MIN(p.Fecha_Inicio) AS VIEJO, MAX(p.Fecha_Inicio) AS RECIENTE
+FROM Proyecto p
+WHERE p.Clasificacion NOT IN ('Casa Campestre', 'Condominio')
+GROUP BY p.Ciudad, p.Clasificacion 
+ORDER by p.Ciudad, p.Clasificacion; 
+
+
+
+4. SELECT p.ID_Proyecto, SUM(c.Cantidad * mc.Precio_Unidad) AS VALOR 
+FROM Proyecto p
+JOIN Compra c ON (c.ID_Proyecto == p.ID_Proyecto)
+JOIN MaterialConstruccion mc ON (mc.ID_MaterialConstruccion = c.ID_MaterialConstruccion)
+WHERE c.Pagado = 'No'
+GROUP BY p.ID_Proyecto
+HAVING VALOR > 50000
+ORDER BY VALOR DESC;
+
+
+5. SELECT l.Nombre || ' ' || l.Primer_Apellido || ' ' || l.Segundo_Apellido AS LIDER,
+SUM(c.Cantidad * mc.Precio_Unidad) VALOR 
+FROM Lider l
+JOIN Proyecto p ON (p.ID_Lider = l.ID_Lider)
+JOIN MaterialConstruccion mc ON (mc.ID_MaterialConstruccion = c.ID_MaterialConstruccion)
+JOIN Compra c ON (c.ID_Proyecto = p.ID_Proyecto)
+GROUP BY LIDER 
+ORDER BY VALOR DESC
+LIMIT 10;
+
+
+
